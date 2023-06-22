@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Coin
+  - Potion
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enemy
+    uniqueID: 3222493337
+    locked: 0
+  - name: Coin
+    uniqueID: 3398360429
+    locked: 0
+  - name: Player
+    uniqueID: 4110870035
+    locked: 0
+  - name: Weapon
+    uniqueID: 1863643799
+    locked: 0
