@@ -5,7 +5,7 @@ using UnityEngine;
 public class MeleeAttack : MonoBehaviour
 {
     public int Damage;
-    public int Radius;
+    public float Radius;
     [SerializeField] private float CooldownInSeconds;
     private float coolDownInSecondValue;
 
@@ -44,5 +44,10 @@ public class MeleeAttack : MonoBehaviour
     {
         if (CooldownInSeconds > 0)
             CooldownInSeconds -= Time.deltaTime;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, Radius);
     }
 }

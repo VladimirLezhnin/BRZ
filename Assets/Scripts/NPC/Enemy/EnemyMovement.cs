@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     private GameObject Target;
-    private int StopRadius;
+    private float StopRadius;
 
     public float Speed;
 

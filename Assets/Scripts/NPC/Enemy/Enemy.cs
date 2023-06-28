@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int Health;
     private int MaxHealth;
 
+    [SerializeField] private float AttackDodgeChance;
+
     [SerializeField] private int MoneyDrop;
 
     private void Start()
@@ -19,9 +21,18 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int takenDamage)
     {
+        if (AttackDodgeChance != 0 && DodgeAttack())
+            return;
+            
+
         Health -= takenDamage;
         if (Health <= 0)
             EnemyKilled();
+    }
+
+    private bool DodgeAttack()
+    {
+        return UnityEngine.Random.Range(0f, 1f) <= AttackDodgeChance;
     }
 
     private void EnemyKilled()
