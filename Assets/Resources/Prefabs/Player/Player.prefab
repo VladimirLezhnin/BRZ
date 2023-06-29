@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2666173519439350530}
   - component: {fileID: 2666173519439350533}
   - component: {fileID: 2666173519439350522}
+  - component: {fileID: -4849056133305356378}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -173,9 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01cc73bcffdc66546861e34bbd2c3f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 0
-  MaxHealth: 0
-  Money: 0
 --- !u!114 &2666173519439350530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,6 +214,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory: {fileID: 2666173519457591206}
+--- !u!114 &-4849056133305356378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2666173519439350541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 307c3e1c1102cb34f82d1aca68084b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2666173519457591206
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +268,7 @@ GameObject:
   - component: {fileID: 2666173520717129676}
   m_Layer: 6
   m_Name: Hand
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ActionManager : MonoBehaviour
 {
+    public float ItemPickUpRadius;
+
     private Camera Camera;
     void Start()
     {
@@ -19,10 +21,15 @@ public class ActionManager : MonoBehaviour
             var findActiveObjects = false;
             foreach (var obj in ActiveObjects)
             {
-                if (obj.GetComponent<ObjData>().IsInteractionObject)
+                var objDataScript = obj.GetComponent<ObjData>();
+
+                if (objDataScript == null)
+                    continue;
+
+                if (objDataScript.IsInteractionObject)
                 {
                     findActiveObjects = true;
-                    obj.GetComponent<ObjData>().ActivateByPlayer = true;
+                    objDataScript.ActivateByPlayer = true;
                 }
             }
             if (!findActiveObjects)
@@ -33,5 +40,22 @@ public class ActionManager : MonoBehaviour
                 }
             }
         }
+        
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            var ActiveObjects = Physics2D.OverlapCircleAll(transform.position, ItemPickUpRadius);
+
+            foreach(var obj in ActiveObjects)
+            {
+                if(obj.tag == "Item")
+                    obj.GetComponent<Item>().Collected();
+            }
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, ItemPickUpRadius);
     }
 }

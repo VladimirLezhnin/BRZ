@@ -9,7 +9,7 @@ public enum PotionsTypes
     Mana
 }
 
-public class Potion : MonoBehaviour
+public class Potion : Item
 {
     public string Name;
     public int RestoreValue;
