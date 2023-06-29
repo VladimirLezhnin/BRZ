@@ -34,6 +34,11 @@ public class Player : MonoBehaviour
         playerUI.UpdateHealthBar();
     }
 
+    public void RestoreHealth(int restoreValue)
+    {
+        Health += restoreValue;
+    }
+
     private void CollectCoin(Collider2D collision)
     {
         var coinClass = collision.gameObject.GetComponent<Coin>();

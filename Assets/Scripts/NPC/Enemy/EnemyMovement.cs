@@ -14,8 +14,6 @@ public class EnemyMovement : MonoBehaviour
     {
         StopRadius = GetComponent<MeleeAttack>().Radius;
         Target = GameObject.FindGameObjectWithTag("Player");
-
-
     }
 
     void Update()

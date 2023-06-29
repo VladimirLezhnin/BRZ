@@ -17,7 +17,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(IsInvenoryFull());
+
     }
 
     private bool IsInvenoryFull()

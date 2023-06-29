@@ -2,8 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Potion : Item
+public enum PotionsTypes
 {
-    public int Type;
+    Health,
+    Stamina,
+    Mana
+}
+
+public class Potion : MonoBehaviour
+{
+    public string Name;
     public int RestoreValue;
+    [SerializeField] private PotionsTypes type;
+
+    private Player player;
+
+    private void Start()
+    {
+        player = GetComponent<Player>();
+    }
+
+    private void GetUsed()
+    {
+        switch(type)
+        {
+            case PotionsTypes.Health:
+                player.RestoreHealth(RestoreValue);
+                break;
+
+            case PotionsTypes.Stamina: 
+                break;
+
+            case PotionsTypes.Mana:
+                break;
+        }
+    }
 }
