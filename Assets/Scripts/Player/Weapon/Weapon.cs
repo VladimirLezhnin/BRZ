@@ -30,7 +30,7 @@ public class Weapon : MonoBehaviour
 
     private void GetAction()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
             Attack();
     }
 
