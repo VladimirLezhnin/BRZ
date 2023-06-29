@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 325268947630331620}
   - component: {fileID: 1624153262153528410}
   - component: {fileID: -4232281998249823050}
+  - component: {fileID: 6656898764910937146}
   m_Layer: 7
   m_Name: KnightMob
   m_TagString: Enemy
@@ -150,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: "\u0427\u0435\u0440\u043D\u044B\u0439 \u0420\u044B\u0446\u0430\u0440\u044C"
   Health: 50
+  AttackDodgeChance: 0
   MoneyDrop: 768
 --- !u!114 &1624153262153528410
 MonoBehaviour:
@@ -179,3 +181,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3
+--- !u!114 &6656898764910937146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325268947630331618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fe70758395b6a47afedb73117cd9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsItem: 0
+  IsInteractionObject: 0
+  IsEnvironmentObject: 0
+  IsNPC: 0
+  IsMob: 0
+  IsEnemy: 0
+  IsPlayer: 0

@@ -7,7 +7,7 @@ public class MeleePointMovement : MonoBehaviour
     private PlayerMovement PlayerMovement;
     void Start()
     {
-        PlayerMovement = transform.parent.parent.GetComponent<PlayerMovement>();
+        PlayerMovement = transform.parent.parent.parent.GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame

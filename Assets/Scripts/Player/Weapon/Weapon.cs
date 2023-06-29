@@ -8,10 +8,17 @@ public class Weapon : MonoBehaviour
     public Transform AttackPoint;
     public float AttackRange = 0.5f;
     public LayerMask EnemyLayers;
+    public bool attackAction;
+
+    private void Start()
+    {
+        attackAction = false;
+    }
 
     private void Update()
     {
-        GetAction();
+        if (Input.GetKeyDown(KeyCode.Mouse0) && attackAction)
+            Attack();
     }
 
     private void Attack()
@@ -26,12 +33,6 @@ public class Weapon : MonoBehaviour
 
             enemyClass.TakeDamage(Damage);
         }
-    }
-
-    private void GetAction()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-            Attack();
     }
 
     private void OnDrawGizmos()
