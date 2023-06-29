@@ -83,5 +83,32 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1213627997258392422, guid: fcaea1bc366a13d47acbf91f1e7e29d1, type: 3}
+    - {fileID: 5643089900461262052, guid: fcaea1bc366a13d47acbf91f1e7e29d1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fcaea1bc366a13d47acbf91f1e7e29d1, type: 3}
+--- !u!1 &2055480914740755241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 32251353920858046, guid: fcaea1bc366a13d47acbf91f1e7e29d1, type: 3}
+  m_PrefabInstance: {fileID: 2086324890365713559}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4456061271515610499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055480914740755241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fe70758395b6a47afedb73117cd9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsItem: 0
+  IsInteractionObject: 0
+  IsEnvironmentObject: 0
+  IsNPC: 0
+  IsMob: 0
+  IsEnemy: 0
+  IsPlayer: 0
+  ActivateByPlayer: 0

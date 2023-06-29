@@ -83,5 +83,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9150340520371586253, guid: c7fd8ce2d9972714dad6555e0aeefaaa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c7fd8ce2d9972714dad6555e0aeefaaa, type: 3}
+--- !u!1 &32251353920858046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7951582801498259477, guid: c7fd8ce2d9972714dad6555e0aeefaaa, type: 3}
+  m_PrefabInstance: {fileID: 7938480561433257899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5643089900461262052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32251353920858046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fe70758395b6a47afedb73117cd9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsItem: 0
+  IsInteractionObject: 0
+  IsEnvironmentObject: 0
+  IsNPC: 0
+  IsMob: 0
+  IsEnemy: 0
+  IsPlayer: 0
+  ActivateByPlayer: 0

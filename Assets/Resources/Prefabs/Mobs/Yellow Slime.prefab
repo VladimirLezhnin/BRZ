@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4730814143428384583}
   - component: {fileID: 4730814143428384576}
   - component: {fileID: 4730814143428384577}
+  - component: {fileID: 3635129662014410279}
   m_Layer: 0
   m_Name: Yellow Slime
   m_TagString: Untagged
@@ -202,3 +203,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3635129662014410279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4730814143428384578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fe70758395b6a47afedb73117cd9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsItem: 0
+  IsInteractionObject: 0
+  IsEnvironmentObject: 0
+  IsNPC: 0
+  IsMob: 0
+  IsEnemy: 0
+  IsPlayer: 0

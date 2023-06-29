@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2121467240595224721}
   - component: {fileID: 2121467240595224724}
   - component: {fileID: 2121467240595224725}
+  - component: {fileID: -6407608072563543558}
   m_Layer: 0
   m_Name: Blue Slime
   m_TagString: Enemy
@@ -180,3 +181,22 @@ MonoBehaviour:
   Damage: 5
   Radius: 1.2
   CooldownInSeconds: 4
+--- !u!114 &-6407608072563543558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121467240595224718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fe70758395b6a47afedb73117cd9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsItem: 0
+  IsInteractionObject: 0
+  IsEnvironmentObject: 0
+  IsNPC: 0
+  IsMob: 0
+  IsEnemy: 0
+  IsPlayer: 0
