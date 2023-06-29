@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public int Health { get; private set; }
     public int MaxHealth { get; private set; }
     public int Money { get; private set; }
-    public Item[] Inventory { get; private set; }
 
     private PlayerUI playerUI;
 
@@ -16,8 +15,6 @@ public class Player : MonoBehaviour
     {
         MaxHealth = 100;
         Health = MaxHealth;
-
-        Inventory = new Item[4];
 
         playerUI = GetComponent<PlayerUI>();
     }

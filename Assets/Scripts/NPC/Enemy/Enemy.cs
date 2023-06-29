@@ -57,6 +57,5 @@ public class Enemy : MonoBehaviour
         {
             script.enabled = false;
         }
-
     }
 }
