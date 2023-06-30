@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    [SerializeField] private GameObject Inventory;
+    public GameObject Inventory;
 
     private int InventoryLimit = 4;
 
@@ -20,7 +20,12 @@ public class InventoryManager : MonoBehaviour
 
     }
 
-    private bool IsInvenoryFull()
+    public void Add(GameObject itemToAdd)
+    {
+        
+    }
+
+    public bool IsInvenoryFull()
     {
         if (Inventory == null)
             return false;
