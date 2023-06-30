@@ -23,6 +23,10 @@ public class EnemyMovement : MonoBehaviour
         {
             MovePeriodically();
         }
+        else
+        {
+            MoveEvenly();
+        }
     }
 
     private void MovePeriodically()

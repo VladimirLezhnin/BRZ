@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2121467240595224720}
   - component: {fileID: -7465158417782634728}
   - component: {fileID: 2121467240595224721}
-  - component: {fileID: 2121467240595224724}
   - component: {fileID: 2121467240595224725}
+  - component: {fileID: 2121467240595224724}
   - component: {fileID: -6407608072563543558}
   m_Layer: 0
   m_Name: Blue Slime
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1072473959
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1425448732, guid: bf20cdb869598ce4ea8b3426388e8e3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -151,21 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Blue Slime
   Health: 10
-  AttackDodgeChance: 20
+  AttackDodgeChance: 0.2
   MoneyDrop: 298
---- !u!114 &2121467240595224724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121467240595224718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 309baefeec3567a4b8026019713419d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 2
 --- !u!114 &2121467240595224725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +168,19 @@ MonoBehaviour:
   Damage: 5
   Radius: 1.2
   CooldownInSeconds: 4
+--- !u!114 &2121467240595224724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121467240595224718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309baefeec3567a4b8026019713419d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!114 &-6407608072563543558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,5 +198,6 @@ MonoBehaviour:
   IsEnvironmentObject: 0
   IsNPC: 0
   IsMob: 0
-  IsEnemy: 0
+  IsEnemy: 1
   IsPlayer: 0
+  ActivateByPlayer: 0

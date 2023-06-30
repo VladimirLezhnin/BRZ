@@ -25,10 +25,13 @@ public class Weapon : MonoBehaviour
     {
         //Play attack Animation
 
-        var hittedEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRange, EnemyLayers);
+        var hittedEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRange);
         
         foreach(var enemy in hittedEnemies)
         {
+            if (enemy.tag != "Enemy")
+                continue;
+
             var enemyClass = enemy.GetComponent<Enemy>();
 
             enemyClass.TakeDamage(Damage);

@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4730814143428384580}
   - component: {fileID: 4730814143428384581}
   - component: {fileID: 4730814143428384582}
-  - component: {fileID: 4730814143428384583}
   - component: {fileID: 4730814143428384576}
+  - component: {fileID: 4730814143428384583}
   - component: {fileID: 4730814143428384577}
   - component: {fileID: 3635129662014410279}
   m_Layer: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1072473959
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -707388693, guid: ae50ef28bb31b7846b93347d987ce16b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -154,19 +154,6 @@ MonoBehaviour:
   Health: 10
   AttackDodgeChance: 0
   MoneyDrop: 376
---- !u!114 &4730814143428384583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4730814143428384578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 309baefeec3567a4b8026019713419d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 2
 --- !u!114 &4730814143428384576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +169,19 @@ MonoBehaviour:
   Damage: 15
   Radius: 1.2
   CooldownInSeconds: 4
+--- !u!114 &4730814143428384583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4730814143428384578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309baefeec3567a4b8026019713419d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!95 &4730814143428384577
 Animator:
   serializedVersion: 5
@@ -220,5 +220,6 @@ MonoBehaviour:
   IsEnvironmentObject: 0
   IsNPC: 0
   IsMob: 0
-  IsEnemy: 0
+  IsEnemy: 1
   IsPlayer: 0
+  ActivateByPlayer: 0
