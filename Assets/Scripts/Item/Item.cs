@@ -7,10 +7,14 @@ public class Item : MonoBehaviour
     private SpriteRenderer SpriteRender;
     private BoxCollider2D BoxCollider;
 
-    private void Start()
+    private void Awake()
     {
         SpriteRender = GetComponent<SpriteRenderer>();
         BoxCollider = GetComponent<BoxCollider2D>();
+    }
+
+    private void Start()
+    {
     }
 
     public void Collected()

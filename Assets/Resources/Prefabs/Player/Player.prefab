@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 307c3e1c1102cb34f82d1aca68084b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ItemPickUpRadius: 0.87
 --- !u!1 &2666173519457591206
 GameObject:
   m_ObjectHideFlags: 0
