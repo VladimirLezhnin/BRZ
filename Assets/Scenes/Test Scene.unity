@@ -1287,6 +1287,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4849056133305356378, guid: 63c821d409d2b9a4eb55c8f5af5c2749, type: 3}
+      propertyPath: ItemPickUpRadius
+      value: 1.11
+      objectReference: {fileID: 0}
     - target: {fileID: 2666173519439350533, guid: 63c821d409d2b9a4eb55c8f5af5c2749, type: 3}
       propertyPath: HealthBar
       value: 
