@@ -7,7 +7,6 @@ public class Weapon : MonoBehaviour
     public int Damage;
     public Transform AttackPoint;
     public float AttackRange = 0.5f;
-    public LayerMask EnemyLayers;
     public bool attackAction;
 
     private void Start()
@@ -33,7 +32,6 @@ public class Weapon : MonoBehaviour
                 continue;
 
             var enemyClass = enemy.GetComponent<Enemy>();
-
             enemyClass.TakeDamage(Damage);
         }
     }
