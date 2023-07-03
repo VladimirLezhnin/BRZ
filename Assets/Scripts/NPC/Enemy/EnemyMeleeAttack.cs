@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeAttack : MonoBehaviour
+public class EnemyMeleeAttack : MonoBehaviour
 {
     public int Damage;
     public float Radius;

@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
-        StopRadius = GetComponent<MeleeAttack>().Radius;
+        StopRadius = GetComponent<EnemyMeleeAttack>().Radius;
         Target = GameObject.FindGameObjectWithTag("Player");
     }
 

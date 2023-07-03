@@ -5,16 +5,14 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class MeleePointMovement : MonoBehaviour
+public class WeaponAttackDirection : MonoBehaviour
 {
     private Transform PlayerMovement;
-    private float Radius = 1;
     void Start()
     {
         PlayerMovement = transform.parent.parent.parent;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         GetAttackDirection();
@@ -30,6 +28,6 @@ public class MeleePointMovement : MonoBehaviour
         float newX = Mathf.Cos(angle);
         float newY = Mathf.Sin(angle);
 
-        transform.localPosition = new Vector2(newX, -newY);
+        transform.localPosition = new Vector2(-newX, -newY);
     }
 }
