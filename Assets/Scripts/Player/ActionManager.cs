@@ -31,6 +31,9 @@ public class ActionManager : MonoBehaviour
                     findActiveObjects = true;
                     objDataScript.ActivateByPlayer = true;
                 }
+
+                if (objDataScript.IsWeapon)
+                    Weapon.PickUp(obj);
             }
             if (!findActiveObjects)
             {

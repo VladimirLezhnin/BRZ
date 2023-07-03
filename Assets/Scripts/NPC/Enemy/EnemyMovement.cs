@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
-        StopRadius = GetComponent<MeleeAttack>().Radius;
+        StopRadius = GetComponent<EnemyMeleeAttack>().Radius;
         Target = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -22,6 +22,10 @@ public class EnemyMovement : MonoBehaviour
         if (GetComponent<Enemy>().name.Contains("Slime"))
         {
             MovePeriodically();
+        }
+        else
+        {
+            MoveEvenly();
         }
     }
 

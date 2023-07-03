@@ -198,5 +198,6 @@ MonoBehaviour:
   IsEnvironmentObject: 0
   IsNPC: 0
   IsMob: 0
-  IsEnemy: 0
+  IsEnemy: 1
   IsPlayer: 0
+  ActivateByPlayer: 0

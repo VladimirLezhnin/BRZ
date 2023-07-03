@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjData : MonoBehaviour
 {
+    public bool IsWeapon;
     public bool IsItem;
     public bool IsInteractionObject;
     public bool IsEnvironmentObject;

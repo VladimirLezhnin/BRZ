@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 6381868488389258052}
   - component: {fileID: 774086119277535561}
   - component: {fileID: 9220839307519281822}
-  - component: {fileID: 6341004620390600718}
   - component: {fileID: 7695826235026921298}
+  - component: {fileID: 6341004620390600718}
   - component: {fileID: 8095117118293600032}
   m_Layer: 0
   m_Name: Green Slime
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1072473959
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1957583349, guid: 25142a4ecca3e534e9a198c343f79c36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -153,19 +153,6 @@ MonoBehaviour:
   Health: 10
   AttackDodgeChance: 0
   MoneyDrop: 178
---- !u!114 &6341004620390600718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752370732207335763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 309baefeec3567a4b8026019713419d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 2
 --- !u!114 &7695826235026921298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +168,19 @@ MonoBehaviour:
   Damage: 5
   Radius: 1.2
   CooldownInSeconds: 4
+--- !u!114 &6341004620390600718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752370732207335763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309baefeec3567a4b8026019713419d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!114 &8095117118293600032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,5 +198,6 @@ MonoBehaviour:
   IsEnvironmentObject: 0
   IsNPC: 0
   IsMob: 0
-  IsEnemy: 0
+  IsEnemy: 1
   IsPlayer: 0
+  ActivateByPlayer: 0

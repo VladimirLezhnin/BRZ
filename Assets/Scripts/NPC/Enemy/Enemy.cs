@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int Health;
     private int MaxHealth;
 
-    [SerializeField] private float AttackDodgeChance;
+    [Range(0f, 1f)][SerializeField] private float AttackDodgeChance;
 
     [SerializeField] private int MoneyDrop;
 
@@ -22,7 +22,10 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int takenDamage)
     {
         if (AttackDodgeChance != 0 && DodgeAttack())
+        {
+            Debug.Log("Dodged Attack");
             return;
+        }
             
 
         Health -= takenDamage;
