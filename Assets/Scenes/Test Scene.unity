@@ -531,6 +531,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2666173519439350528, guid: 63c821d409d2b9a4eb55c8f5af5c2749, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2666173519439350533, guid: 63c821d409d2b9a4eb55c8f5af5c2749, type: 3}
       propertyPath: HealthBar
       value: 

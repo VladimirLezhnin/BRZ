@@ -8,7 +8,7 @@ public class MeleeAttackWeapon : MonoBehaviour
     public Transform AttackPoint;
     public float AttackRange = 0.5f;
 
-    public Weapon WeaponScript;
+    private Weapon WeaponScript;
     
     private void Start()
     {

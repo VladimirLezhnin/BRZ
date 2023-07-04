@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 3093713939421576750}
   - component: {fileID: 3093713939421576749}
   - component: {fileID: 2476496541655310767}
+  - component: {fileID: 233703965599728025}
   - component: {fileID: 3093713939421576748}
   m_Layer: 0
   m_Name: Pistol
@@ -224,6 +225,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackAction: 0
+--- !u!114 &233703965599728025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093713939421576747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d22da885ee1be4da643230e0ac098e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackDirection: {fileID: 3093713938849176970}
+  BulletPrefab: {fileID: 6514789195379224154, guid: 8b73bfa37ccdf47469292910c7dd17f5, type: 3}
 --- !u!114 &3093713939421576748
 MonoBehaviour:
   m_ObjectHideFlags: 0
