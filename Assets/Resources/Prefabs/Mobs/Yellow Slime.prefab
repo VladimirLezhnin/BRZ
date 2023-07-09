@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3635129662014410279}
   m_Layer: 0
   m_Name: Yellow Slime
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,6 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7fe70758395b6a47afedb73117cd9f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsWeapon: 0
   IsItem: 0
   IsInteractionObject: 0
   IsEnvironmentObject: 0
