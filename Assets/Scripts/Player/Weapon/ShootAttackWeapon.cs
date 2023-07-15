@@ -27,6 +27,5 @@ public class ShootAttackWeapon : MonoBehaviour
         var angleInDegrees = angleInRadians * (180 / Mathf.PI);
 
         Instantiate(BulletPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, angleInDegrees-180)));
-        Debug.Log(angleInDegrees);
     }
 }

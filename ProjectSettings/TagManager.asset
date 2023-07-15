@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Hand
   - Item
+  - Boss
   layers:
   - Default
   - TransparentFX

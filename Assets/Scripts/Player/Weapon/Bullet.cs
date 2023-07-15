@@ -18,6 +18,14 @@ public class Bullet : MonoBehaviour
         {
             var enemyScript = collision.GetComponent<Enemy>();
             enemyScript.TakeDamage(Damage);
+            Destroy(gameObject);
+        }
+
+        if(collision.tag == "Player")
+        {
+            var playerScript = collision.GetComponent<Player>();
+            playerScript.TakeDamage(Damage);
+            Destroy(gameObject);
         }
     }
 }
