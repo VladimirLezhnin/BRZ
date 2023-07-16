@@ -30,6 +30,11 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        var movementScript = GetComponent<PlayerMovement>();
+
+        if (movementScript.IsDashing)
+            return;
+
         Health -= damage;
         playerUI.UpdateHealthBar();
     }

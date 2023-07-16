@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private float rollSpeed = 50f;
 
     private float rollCoolDownTimeInSecond = 2;
-    private bool canRoll = true;
+    public bool IsDashing = false;
 
     public Vector2 Movement;
     private Animator Animator;
@@ -76,12 +76,12 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator Roll() //я ебал —аню
     {
-        if (Input.GetKey(keyboardBinds["Roll"]) && canRoll)
+        if (Input.GetKey(keyboardBinds["Roll"]) && !IsDashing)
         {
             playerRigidBody.MovePosition(playerRigidBody.position + Movement * rollSpeed * Time.fixedDeltaTime);
-            canRoll = false;
+            IsDashing = true;
             yield return new WaitForSeconds(rollCoolDownTimeInSecond);
-            canRoll = true;
+            IsDashing = false;
         }
     }
 }
